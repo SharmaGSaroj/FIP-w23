@@ -1,0 +1,1563 @@
+.hero{
+    margin-top: 64px;
+}
+
+.herocontent {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+margin-top: 32px;
+    transition: all 1s ease-in;
+}
+
+.herotext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 648px;
+
+}
+
+.hero-heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #020202;
+    width: 693px;
+height: 239px;
+}
+
+.sub-heading {
+    margin-top: 32px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #C51111;
+}
+
+.hero-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 648px;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.download-button a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px 8px 20px;
+    gap: 8px;
+    color: white;
+    width: 237px;
+    height: 44px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+
+    background: #C51111;
+    border-radius: 8px;
+}
+
+.count-details{
+    display: flex;
+    flex-direction: row;
+}
+.count-details img{
+    width: 127px;
+height: 40px;
+}
+
+.count-info-text {
+    width: 268px;
+height: 31px;
+margin: 8px;
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 30px;
+/* identical to box height, or 169% */
+
+letter-spacing: -0.02em;
+
+/* whites/10 */
+
+color: #7C7C7C;
+
+}
+
+.herotext-info {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 24px;
+    letter-spacing: -0.02em;
+    color: #7C7C7C;
+    text-align: justify;
+    
+}
+
+.heroimage {
+    position: relative;
+    max-width: 400px;
+    margin: 2rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+
+}
+
+.heroimage img {
+    width: 452px;
+    height: 548px;
+}
+
+
+
+
+
+//---------------------------------//
+//End of Hero section// 
+//---------------------------------//
+
+
+
+
+//---------------------------------//
+//Start of Impact// 
+//---------------------------------//
+.impact{
+    height:900px;
+    margin-bottom: 64px;
+}
+
+
+.impact-info {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    transition: all 1s ease-in;
+    
+
+
+
+}
+
+.impact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 55px;
+
+    position: absolute;
+    width: 486px;
+    height: 411px;
+    left: 87px;
+    top: 134px;
+    max-width: 720px;
+
+
+}
+
+.impact-heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+
+    color: #020202;
+}
+
+.impact-subheading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -23px;
+    letter-spacing: -0.02em;
+    color: #7C7C7C;
+    text-align: justify;
+
+}
+
+.impact-image {
+    
+  margin-bottom: 36px;
+    
+
+}
+
+.impact-card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 18px;
+    position: absolute;
+    width: 291px;
+    height: 289px;
+    left: 740px;
+    top: 94px;
+
+    border: 1.5px solid #EBEBEB;
+    border-radius: 24px;
+    transition: transform 0.5s;
+  transition-delay: 0.5s;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+
+.impact-1-heading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+
+
+    letter-spacing: -0.02em;
+
+
+
+    color: #020202;
+}
+
+.impact-1-fact {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #7C7C7C;
+}
+
+.impact-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 18px;
+
+    position: absolute;
+    width: 291px;
+    height: 315px;
+    left: 740px;
+    top: 413px;
+
+    border: 1.5px solid #EBEBEB;
+    border-radius: 24px;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+      &:hover{
+          cursor: pointer;
+          transform: scale(1.1);
+      }
+}
+
+.impact-card-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 18px;
+
+    position: absolute;
+    width: 291px;
+    height: 293px;
+    left: 1069px;
+    top: 129px;
+
+    border: 1.5px solid #EBEBEB;
+    border-radius: 24px;
+    transition: transform 0.5s;
+    transition-delay: 0.5s;
+      &:hover{
+          cursor: pointer;
+          transform: scale(1.1);
+      }
+}
+
+.card-image {
+    width: 48px;
+    height: 48px;
+
+
+    background: #FFFFFF;
+
+    align-items: center;
+
+    img {
+
+        width: 90px
+    }
+}
+
+.impact-card-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 18px;
+    position: absolute;
+    width: 291px;
+    height: 289px;
+    left: 1069px;
+    top: 452px;
+    border: 1.5px solid #EBEBEB;
+    border-radius: 24px;
+    transition: transform 0.5s;
+    transition-delay: 0.2s;
+      &:hover{
+          cursor: pointer;
+          transform: scale(1.1);
+      }
+
+}
+
+.impact-card {
+    gap: 20px;
+    max-width: 720px;
+    margin: 2rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+
+
+//---------------------------------//
+//End of Impact section// 
+//---------------------------------//
+
+
+//---------------------------------//
+//Start of Ebook Download// 
+//---------------------------------//
+
+.ebook-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+    gap: 20px;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 64px;
+
+}
+
+.ebook-result {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+    }
+}
+
+.download-info-left {
+    display: grid;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 20px;
+
+    position: absolute;
+    width: 588px;
+    height: 111px;
+    margin-top: 635px;
+    margin-bottom: 26px;
+    margin-right: 16px;
+    margin-left: 16px;
+
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(5.5px);
+
+
+    border-radius: 8px;
+
+}
+
+.download-info {
+    box-sizing: border-box;
+    padding: 24px 24px 16px;
+    gap: 20px;
+    width: 572px;
+    height: 95px;
+    border: 1px dashed #424245;
+    border-radius: 8px;
+}
+
+.download-info-heading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+
+    color: #525252;
+
+}
+
+.download-info-text {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: -18px;
+    letter-spacing: -0.02em;
+    .red {
+        color: #C51111;
+    }
+
+}
+
+.download-ebook {
+
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+    }
+
+}
+
+.download-info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 20px;
+    position: absolute;
+    width: 588px;
+    height: 286px;
+    margin: 464px 16px 22px 16px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(23px);
+    border-radius: 8px;
+
+}
+
+.download-ebook-info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 24px 16px;
+    gap: 14px;
+    width: 572px;
+    height: 270px;
+    border: 1px dashed #424245;
+    border-radius: 8px;
+
+}
+
+.download-ebook-heading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.04em;
+    color: #020202;
+}
+
+.download-ebook-text {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #525252;
+}
+
+.ebook-download-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 524px;
+    height: 40px;
+    background: #C51111;
+    border-radius: 8px;
+
+    a {
+        text-decoration: none;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF
+    }
+}
+
+
+//---------------------------------//
+//End of Ebook-Download// 
+//---------------------------------//
+
+
+
+
+//---------------------------------//
+//Start of fact// 
+//---------------------------------//
+
+.fact {
+    background: #F8E2E2;
+}
+
+.fact-info {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    -webkit-box-pack: justify;
+    height: 654px;
+}
+
+.fact-know {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+
+}
+
+.fact-heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.04em;
+    color: #C51111;
+    margin-bottom: 32px;
+
+}
+
+.sub-heading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #C51111;
+}
+
+.fact-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 648px;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+
+.fact-gif {
+    position: relative;
+    max-width: 720px;
+    margin: 2rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+
+}
+
+hr {
+    width: 823px;
+    height: 0px;
+    left: 81px;
+    top: 260px;
+    margin-bottom: 32px;
+
+    border: 1px solid #E28888;
+}
+
+.fact-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 648px;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.fact-points-heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #020202;
+}
+
+.fact-points {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #7C7C7C;
+}
+
+.fact-gif {
+    position: relative;
+    max-width: 400px;
+    margin: 2rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+//---------------------------------//
+//End of fact// 
+//---------------------------------//
+
+
+
+
+//---------------------------------//
+//Start of video// 
+//---------------------------------//
+
+
+
+.video {
+    background-image: url('/images/Video-bg.png');
+    height: 100vh;
+    background-image: cover;
+    background-position: center;
+    padding-top: 10px;
+    text-align: center;
+   
+    height: 1089px;
+}
+
+.video-heading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-title {
+    margin-bottom: 24px;
+}
+
+.video-section {
+    margin-top: 25px;
+    position: absolute;
+    width: 1280px;
+    height: 563px;
+    left: 80px;
+    top: 429px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+
+}
+
+.video-subheading {
+
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.04em;
+   
+    max-width: 750px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.video-subtitle {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+   
+    opacity: 0.9;
+}
+ video
+{
+    width:1280px;
+    height:488px;
+}
+
+//---------------------------------//
+//End of Video // 
+//---------------------------------//
+
+
+
+
+//---------------------------------//
+//Start of Blog// 
+//---------------------------------//
+
+.blog {
+    margin-top: 64px;
+}
+
+
+.blog-subheading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #C51111;
+}
+
+.blog-heading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: #020202
+}
+
+
+.blog-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    min-height: 90vh;
+}
+
+.blog-subgrid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 620px;
+    height: 528px;
+}
+
+.blog-subgrid img {
+    width: 620px;
+    height: 391px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.blog-grid-heading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #080808;
+    margin-bottom: 8px;
+}
+
+
+.blog-grid-subheading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #7C7C7C;
+    margin-bottom: 16px;
+}
+
+.blog-grid-button a {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+    text-decoration-line: underline;
+    color: #C51111;
+}
+
+.blog-heading-right {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #080808;
+    margin-bottom: 8px;
+}
+
+.blog-subgrid-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    margin-bottom: 24px;
+    width: 629px;
+    height: 160px;
+
+}
+.blog-subgrid-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 437px;
+    height: 105px;
+}
+.blog-grid-date {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: #7C7C7C;
+}
+
+
+
+//---------------------------------//
+//End of Blog // 
+//---------------------------------//
+
+
+
+
+
+
+
+
+//---------------------------------//
+//Start of forum Text// 
+//---------------------------------//
+
+.forum {
+    height: auto;
+}
+
+.forum-subheading {
+
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 64px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #C51111;
+}
+
+.forum-heading {
+
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    margin: auto auto auto;
+
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #020202;
+}
+
+.forum-content {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 90vh;
+
+}
+
+.forum-image {
+    position: relative;
+    max-width: 400px;
+    margin: 2rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+
+}
+
+.forum-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 16px;
+    gap: 100px;
+    isolation: isolate;
+
+    width: 486px;
+    height: 384px;
+    left: 732px;
+    top: 308px;
+
+
+}
+
+
+.forum-info {
+    font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+
+
+    letter-spacing: -0.04em;
+    text-align: justify;
+    color: #525252;
+    z-index: 1;
+
+}
+
+.personName {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+
+    letter-spacing: -0.02em;
+
+
+
+    color: #C51111;
+}
+
+.personlocation {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #525252;
+}
+
+.forum-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+    position: absolute;
+    width: 220px;
+    height: 48px;
+    left: 610px;
+    background: #C51111;
+    border-radius: 8px;
+    margin-bottom: 64px;
+
+    a {
+        text-decoration: none;
+        color: #ffffff
+    }
+
+}
+
+
+//---------------------------------//
+//End of forum // 
+//---------------------------------//
+
+
+
+
+//---------------------------------//
+//Start of faq// 
+//---------------------------------//
+
+/* CSS for FAQ section */
+.faq {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 64px;
+  }
+  
+  .faq-subheading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 64px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #C51111;
+
+  }
+  
+  .faq-heading {
+    font-size: 48px;
+line-height: 56px;
+
+font-family: 'SF Pro Display';
+font-style: normal;
+text-align: center;
+letter-spacing: -0.04em;
+
+color: #020202;
+
+  }
+  
+  .faq-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #faq {
+    width: 100%;
+  }
+  
+  .faq-line {
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .question {
+    
+
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+
+  }
+  
+  .answer {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: none;
+    margin-top: 20px;
+    
+    text-align: left;
+    flex-grow: initial;
+  }
+  
+  .arrow {
+    float: right;
+    font-size: 14px;
+  }
+
+ 
+ 
+  
+  
+  
+  
+
+
+
+//---------------------------------//
+            //end of faq// 
+//---------------------------------//
+
+//---------------------------------//
+            //Start of join// 
+//---------------------------------//
+.join{
+    background-image: url('/images/contact-bg.png');
+    background-image: cover;
+    background-position:center;
+    
+}
+
+
+.joincontent {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 32px;
+    transition: all 1s ease-in;
+}
+
+.jointext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 648px;
+
+}
+
+.join-heading {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #020202;
+    width: 693px;
+height: 239px;
+}
+
+.join-sub-heading {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #C51111;
+}
+
+.join-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 648px;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.joinbtn a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px 8px 20px;
+    gap: 8px;
+    color: white;
+    width: 237px;
+    height: 44px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    background: #C51111;
+    border-radius: 8px;
+    &:hover{
+        color: white;
+    }
+}
+
+
+.jointext-info {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: -18px;
+    letter-spacing: -0.02em;
+    color: #7C7C7C;
+    text-align: justify;
+    width: 483px;
+    height: 86px;
+    
+}
+
+.join-image {
+    position: relative;
+    max-width: 400px;
+    margin: 2rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+
+}
+
+.joinimage img {
+    width: 551.44px;
+height: 599px;
+}
+
+//-------------------------//
+//------------------------//
+        //End of Join
+//-------------------------//
+//------------------------//
+
+
+
+.pledge {
+    background-image: url('/images/pledge-bg.png');
+    background-image: cover;
+    background-position: center;
+  
+    height: auto;
+
+}
+
+.pledgecontent {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+
+
+
+.pledgetext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+
+
+}
+
+.pledge-subheading {
+
+    left: 80px;
+    top: 103px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #C51111;
+}
+
+.pledge-heading {
+    width: 342px;
+    height: 112px;
+    left: 80px;
+    top: 135px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.04em;
+    color: #020202;
+}
+.pledgetext-info{
+    
+width: 483px;
+height: 86px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 158% */
+letter-spacing: -0.04em;
+
+/* whites/10 */
+color: #7C7C7C;
+
+}
+
+.pledge-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 400px;
+   margin-bottom: 32px;
+    margin-top: 32px;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+
+.pledge-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   margin: 8px 20px 8px 20px;
+    gap: 8px;
+    color: white;
+    width: 237px;
+    height: 44px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    background: #C51111;
+    border-radius: 8px;
+    &:hover{
+        color: white;
+    }
+   
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+ 
+    .top {
+        width: 384px;
+        height: 16px;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+    }
+    .input{
+        box-sizing: border-box;
+        border: 1px solid #D2D2D7;
+        border-radius: 8px;
+        
+        width: 384px;
+        height: 42px;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+
+    }
+    
+    .pledge-count{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 26.4133px 19.0176px;
+        gap: 43.32px;
+        margin-top: 24px;
+        width: 378px;
+        height: 317px;
+        left: 827px;
+        top: 403px;
+        background: #FFFFFF;
+        box-shadow: 0px 124.671px 49.657px rgba(81, 59, 5, 0.01), 0px 69.731px 42.2612px rgba(81, 59, 5, 0.05), 0px 31.6959px 31.6959px rgba(81, 59, 5, 0.09), 0px 7.39572px 16.9045px rgba(81, 59, 5, 0.1), 0px 0px 0px rgba(81, 59, 5, 0.1);
+        border-radius: 16.9045px;
+    }
+    .pledge-count p{
+        font-family: 'SF Pro Text';
+        font-style: bold
+        ;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: -0.2rem;
+        color: #000000;
+    width: 340.1px;
+    height: 64px;
+    
+    }
+    .pledge-count-btm{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .pledge-count-number{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 28.15px;
+        
+        width: 340.1px;
+        height: 29px;
+        p{
+            font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 16px;
+        color: #000000;
+        }
+    }
+    .progress-bar {
+        width: 100%;
+        height: 20px;
+        background-color: #afadad;
+        border-radius: 10px;
+      }
+      
+      .progress {
+        height: 100%;
+        background-color: #c41b1b;
+        border-radius: 10px;
+        width: 50%;
+      }
+      
+    .pledge-count-image{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 28.15px;
+        
+        width: 340.1px;
+        height: 29px;
+    }
+    .pledge-count-btn{
+        display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14.073px 18.764px;
+gap: 11.73px;
+
+width: 143.53px;
+height: 37.53px;
+
+/* blacks/ */
+background: #020202;
+border-radius: 56.292px;
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+    }
+
+
+
+
