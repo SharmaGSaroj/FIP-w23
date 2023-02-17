@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Text';
+    src: url('/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.primarybtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px 8px 20px;
+    gap: 8px;
+    color: white;
+    width: 237px;
+    height: 44px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+
+    background: #C51111;
+    border-radius: 8px;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+
