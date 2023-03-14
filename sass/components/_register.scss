@@ -1,0 +1,236 @@
+
+
+.registration{
+  background-color: #F7F7F7;
+  height: 875px;
+
+}
+.register-content{
+  display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 64px
+    ;
+}
+.register-heading{
+  width: 390px;
+height: 56px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 56px;
+
+letter-spacing: -0.04em;
+
+
+
+color: #020202;
+
+}
+.register-subheading{
+  width: 390px;
+height: 28px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* or 152% */
+
+letter-spacing: -0.02em;
+
+/* whites/10 */
+
+color: #7C7C7C;
+
+}
+.register-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px;
+  gap: 24px;
+  width: 486px;
+  height: 800px;
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+input[type="submit"] {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px 8px 20px;
+  gap: 8px;
+  width: 390px;
+  height: 44px;
+  background: #c41b1b;
+  border-radius: 8px;
+  border: 1px;
+}
+.register-form{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 390px;
+    height: 424px;
+}
+.Name{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 390px;
+height: 80px;
+}
+label{
+  width: 76px;
+  height: 16px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #343A40;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  width: 390px;
+  height: 56px;
+  border: 1px solid #525252;
+  border-radius: 8px;
+
+}
+.icon{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+width: 390px;
+height: 40px;
+font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #7C7C7C;
+  img{
+    cursor: pointer;
+  }
+}
+.divide{
+  
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 390px;
+height: 16px;
+font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7C7C7C;
+}
+
+.agreement-text{
+  width: 366px;
+height: 16px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #313131;
+}
+.agreement{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content:flex-start
+}
+.signup-btn{
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #7C7C7C;
+}
+.register-image{
+
+width: 730px;
+height: 740px;
+
+
+background-color: #D9D9D9;
+border-radius: 16px;
+}
+
+
+@media only screen and (max-width: 768px){
+
+.register-content{
+  display: flex;
+    flex-wrap: nowrap;
+    padding: 4rem 1rem;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    align-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 64px
+    ;
+}
+.register-image{
+
+  display: none;
+  }
+ 
+}
+@media only screen and (max-width: 600px){
+  .register-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px;
+    gap: 24px;
+    width: 50%;
+    height: 800px;
+    background: #FFFFFF;
+    border-radius: 16px;
+  }
+
+
+}
