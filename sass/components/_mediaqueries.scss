@@ -446,7 +446,15 @@ height: 40px;
     line-height: 40px;
     margin-bottom: 24px;
 }
+hr{
+  width: 50%;
+  height: 0px;
+  left: 81px;
+  top: 260px;
+  margin-bottom: 32px;
 
+  border: 1px solid #E28888;
+}
 .sub-heading {
     font-size: 12px;
     line-height: 16px;
@@ -639,12 +647,14 @@ text-align: center;
         line-height: 20px;
     }
     .blog-grid-heading{
-        width: 315px;
-height: 31px;
-font-size: 22px;
-line-height: 30px;
-
-letter-spacing: -0.02em;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      color: #080808;
+      margin-bottom: 8px;
     }
     .blog-subgrid-right img{
         width: 112px;
@@ -657,7 +667,7 @@ height: 112px;
     font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 
     letter-spacing: -0.02em;
@@ -665,123 +675,7 @@ height: 112px;
 }
 
 
-@media screen and (max-width: 768px) {
-    .signup-content {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .signup-heading {
-      width: auto;
-      font-size: 36px;
-      line-height: 44px;
-      text-align: center;
-      margin-top: 24px;
-      margin-bottom: 16px;
-    }
-    
-    .signup-form {
-      width: 100%;
-    }
-    
-    .signup-btn {
-      width: 100%;
-    }
-    
-    
-    .signup-image  {
-      
-        display: none;
-       
-        
-    }
-  }
-  @media screen and (max-width: 460px) {
-    .signup {
-        background-image: url('/images/contact-bg.png');
-        background-size: cover;
-        background-position: center;
-
-        color: #fff;
-    }
-    
-    .signup-content {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2rem;
-        justify-content: center;
-    }
-    
-    .signupform {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        width: 100%;
-        max-width: 350px;
-    }
-    
-    .signup-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        margin-bottom: 1rem;
-    }
-    
-    .signup-subheading {
-        font-size: 12px;
-        line-height: 16px;
-    }
-    
-    .signup-heading {
-        width: 100%;
-        max-width: 250px;
-        font-size: 32px;
-        line-height: 40px;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    
-    .signup-form {
-        width: 100%;
-        max-width: 350px;
-        margin-top: 1rem;
-    }
-    
-    .Name {
-        width: 100%;
-        max-width: 320px;
-    }
-    
-    .textbox {
-        width: 100%;
-        max-width: 320px;
-    }
-    
-    .checkbox {
-        width: 100%;
-        max-width: 260px;
-    }
-    
-    .signup-btn {
-        width: 100%;
-        max-width: 320px;
-        height: 48px;
-        font-size: 14px;
-        line-height: 20px;
-        padding: 12px 16px;
-        margin-top: 1rem;
-    }
-    
-    .form-btm-text {
-        font-size: 12px;
-        line-height: 16px;
-    }
-    
-  }
-
+  
 
   @media only screen and (max-width: 768px) {
     .forum-content {

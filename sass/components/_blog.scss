@@ -1,0 +1,137 @@
+
+.blog-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 120px;
+}
+.blogpage-heading{
+    margin-left: 16px;
+    margin-right: 16px;
+    p{
+width: 850px;
+height: 112px;
+font-family: 'SF Pro Display';
+    font-style: normal;
+font-size: 40px;
+line-height: 56px;
+text-align: center;
+letter-spacing: -0.03em;
+color: #1D1D1F;
+
+
+}
+}
+.blog-info-image img{
+   margin-bottom: 32px;
+   margin-top: 120px; 
+}
+.blog-info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+    width: 620px;
+    .blogtextheading{
+        width: 620px;
+height: 56px;
+
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 56px;
+/* identical to box height, or 117% */
+
+letter-spacing: -0.04em;
+
+/* blacks/ */
+
+color: #ff0000;
+    }
+    p{
+        font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 56xpx;
+    margin-top: 24px;
+    letter-spacing: -0.02em;
+    color: #3e3d3d;
+    text-align: justify;
+    
+    }
+
+}
+
+.blog-gallary{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .blog-page {
+    margin-top: 80px;
+   align-items: center;
+   justify-content: center;
+   margin-left: 32px;
+}
+    .blogpage-heading p {
+    width: 90% ;
+    font-size: 32px;
+    line-height: 48px;
+    }
+    .blog-info-image img {
+    margin-top: 80px;
+    }
+    .blog-info-text {
+    width: 90%;
+    .blogtextheading {
+    width: 100%;
+    font-size: 24px;
+    line-height: 40px;
+    }
+    p {
+    font-size: 16px;
+    line-height: 32px;
+    }
+    }
+    .blog-gallary {
+    flex-direction: column;
+    }
+    }
+
+    @media screen and (max-width: 460px) {
+        .blog-page {
+        margin-top: 80px;
+        align-items: center;
+        justify-content: center;
+        }
+        .blogpage-heading p {
+        width: 90%;
+        font-size: 20px;
+        line-height: 32px;
+        }
+        .blog-info-image img {
+        margin-top: 60px;
+        max-width: 90%;
+        }
+        .blog-info-text {
+        width: 90%;
+        .blogtextheading {
+        width: 100%;
+        font-size: 20px;
+        line-height: 28px;
+        }
+        p {
+        font-size: 14px;
+        line-height: 24px;
+        }
+        }
+        .blog-gallary {
+        flex-direction: column;
+        }
+        }

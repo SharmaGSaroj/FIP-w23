@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <title>Blog</title>
+</head>
+<body>
+   
+    <h1 class="hidden">Blog</h1>
+    <header>
+      <div class="navbar-right">
+        <h2 class="hidden">Navigation</h2>
+        <a href="index.html" class="nav-logo"
+        ><img src="images/main-logo.svg" alt="" srcset=""
+      /></a>
+      <nav>
+        <ul class="nav-menu">
+          
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Blog</a>
+          </li>
+        </ul>
+      
+        
+      </nav>
+      </div>
+        <div class="nav-button">
+        <div class="login">
+          <a href="" >Login</a>
+        </div>
+        <div class="register">
+          <a href="">Register To Join Forum</a>
+        </div>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+    </header> 
+    <main id="app">
+    <section class="blog-info">
+        <div class="blog-page">
+            <theblog
+            v-for="hero in heroData"
+            :hero="hero"
+            ></theblog>
+          </div>
+    </section>
+</main>
+
+<footer>
+
+    <div class="footer-logo">
+      <img src="images/main-logo-white.png" alt="Footer Logo">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+   
+    <div class="footer-login">
+      <a href="#">Login</a>
+    </div>
+  </footer>
+  
+   
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+    <script src="js/main.js" type="module" defer></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+    <main id="app">
+       
+        <div class="login-container">
+            <div class="form-left">
+                <p class="form-heading">
+                    Login
+                </p>
+                <form action="#" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" v-model="username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" v-model="password" required>
+                    
+                    <input type="submit" value="Login" @click.prevent="login">
+                  </form>
+                  
+            </div>
+           
+            
+            <img class="login-image" src="https://www.example.com/login-image.jpg" alt="Login Image">
+          </div>
+
+    </main>
+
+
+
+</body>
+</html>

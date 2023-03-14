@@ -45,4 +45,3 @@ const waypoint = new Waypoint({
 });
 
 
-

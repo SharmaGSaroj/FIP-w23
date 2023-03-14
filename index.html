@@ -3,12 +3,12 @@
   <head>
     
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Think Before You Type</title>
-    <link rel="stylesheet" href="css/main.css" />
+    
+    <link rel="stylesheet" href="public/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-
+    <title>Home</title>
   </head>
   <body>
     <h1 class="hidden">Home</h1>
@@ -34,7 +34,7 @@
       </div>
         <div class="nav-button">
         <div class="login">
-          <a href="" >Login</a>
+          <a href=""  >Login</a>
         </div>
         <div class="register">
           <a href="">Register To Join Forum</a>
@@ -289,18 +289,8 @@
           Stay informed and educated
         </p>
         <div class="blog-grid">
-          <div class="blog-subgrid">
-            <img src="images/blog-image-left.png" alt="" />
-            <p class="blog-grid-heading">
-              Development tips for Webflow
-            </p>
-            <p class="blog-grid-subheading">
-              Lorem ipsum dolor sit ametoeneson vestibulum  sit amet fringilla risumn.
-            </p>
-            <p class="blog-grid-button">
-              <a href="">Read More</a>
-            </p>
-          </div>
+          <blog v-for="hero in heroData"
+          :hero="hero"></blog>
           <div class="blog-grid-right">  
             <div class="blog-subgrid-right">
               <img src="images/blog-image-2.png" alt="" srcset="">
@@ -312,7 +302,7 @@
                 Development tips for Webflow
               </p>
               <p class="blog-grid-button">
-                <a href="">Read More &#8594</a>
+                <a href="" @click.prevent="openComponent">Read More &#8594</a>
               </p>
               </div>
               </div>
@@ -326,7 +316,7 @@
                   Development tips for Webflow
                 </p>
                 <p class="blog-grid-button">
-                  <a href="">Read More &#8594</a>
+                  <a href="" @click.prevent="openComponent">Read More &#8594</a>
                 </p>
                 </div>
                 </div>
@@ -340,7 +330,7 @@
                     Development tips for Webflow
                   </p>
                   <p class="blog-grid-button">
-                    <a href="">Read More &#8594</a>
+                    <a href=""@click.prevent="openComponent">Read More &#8594</a>
                   </p>
                   </div>
                   </div>
@@ -430,6 +420,7 @@
   
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
 

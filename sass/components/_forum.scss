@@ -1,0 +1,145 @@
+.forum-page{
+  background-color: #F7F7F7;
+}
+  .forum-sub-heading{
+    margin-top: 100px;
+text-align: center;
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #C51111;
+  }
+  .forum-page-heading{
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+letter-spacing: -0.04em;
+margin-top: 32px;
+margin-bottom: 32px;
+margin-left: auto;
+margin-right: auto;
+color: #A5A5A5;
+  }
+  .post-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 16px;
+    gap: 14px;
+    border-radius: 12px;
+  }
+  
+  .post {
+
+border-radius: 12px;
+background: #fff;
+padding: 32px;
+margin-bottom: 16px;
+  }
+  .post-header{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 22px;
+    gap: 12px;
+   margin-bottom: 24px;
+  
+  }
+  
+  .post-title {
+      width: 616px;
+      height: 50px;
+
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+
+      letter-spacing: -0.03em;
+
+
+  color: #020202;
+  }
+  
+  .post-meta {
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 3px;
+width: 616px;
+height: 20px;
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+
+
+letter-spacing: -0.03em;
+
+
+
+color: #020202;
+  }
+  
+  .post-author {
+    width: 99px;
+    height: 20px;
+  }
+  .post-date{
+   color:  #9c9c9c;
+  }
+  .post-content {
+
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: -0.04em;
+      margin-top: 16px;
+      text-align: justify;
+  }
+
+
+  @media only screen and (max-width: 768px){
+    .post-meta {
+      display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 3px;
+
+  }
+  .forum-page-heading{
+font-size: 36px;
+  }
+  .post-list {
+    max-width: 450px;
+   
+  }
+  .post-title {
+    width: 312px;
+}
+
+.post-date {
+  margin-bottom: 36px;
+}
+.post-meta {
+      width: 50%;
+      }
+  }

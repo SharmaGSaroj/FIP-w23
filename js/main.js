@@ -1,3 +1,8 @@
+import BlogSection from "./components/TheBlogComponent.js";
+import TheForumPage from "./components/TheForumPage.js";
+
+
+
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -21,15 +26,6 @@ const heroSection = document.querySelector('.hero');
 const header = document.querySelector('header');
 const heroButton = document.querySelector('.hero-button');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > heroSection.offsetHeight) {
-    header.classList.add('sticky');
-    heroButton.classList.add('hidden');
-  } else {
-    header.classList.remove('sticky');
-    heroButton.classList.remove('hidden');
-  }
-});
 
 
 (() => {
@@ -38,20 +34,35 @@ window.addEventListener('scroll', () => {
 
     createApp({
         created() {
-
+            fetch('/data.json')
+            .then(res => res.json())
+            .then(data => this.heroData = data)
+            .catch(error => console.error(error));
         },
         data() {
             return {
-
+                heroData:{},
+                username: '',
+            password: '',
             }
         },
 
         components: {
-
+            theblog:BlogSection,
+            theforum:TheForumPage
         },
         methods: {
+            login() {
+                // Handle login logic here
+                console.log('Logging in with:', this.username, this.password);
+              },
+            openComponent() {
+                // Navigate to the new page
+                window.location.href = 'blog.html';
+              }
+            }
 
-        },
+        
     }).mount('#app')
 
 
