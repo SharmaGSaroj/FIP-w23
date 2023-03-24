@@ -26,22 +26,35 @@ window.addEventListener("load", function() {
   tl.play();
 });
 
-const heroSection = document.querySelector('.hero');
-const header = document.querySelector('header');
-const herobutton = document.querySelector('.primarybtn');
 
-const waypoint = new Waypoint({
-  element: heroSection,
-  handler: function(direction) {
-    if (direction === 'down') {
-      header.classList.add('sticky');
-      herobutton.classList.add('hidden');
-    } else {
-      header.classList.remove('sticky');
-      herobutton.classList.remove('hidden');
-    }
-  },
-  offset: '50%',
+const dts = document.getElementsByTagName("dt");
+for (let i = 0; i < dts.length; i++) {
+    dts[i].addEventListener("click", () => {
+        const arrow = dts[i].getElementsByClassName("arrow")[0];
+        const dd = dts[i].nextElementSibling;
+        if (dd.style.display === "block") {
+            dd.style.display = "none";
+            arrow.innerHTML = "&#9660;";
+        } else {
+            dd.style.display = "block";
+            arrow.innerHTML = "&#9650;";
+        }
+    });
+}
+// Navigation menu functionality
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
+// Toggle active class when hamburger is clicked
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 });
 
+// Remove active class from menu when a nav link is clicked
+navLink.forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
 

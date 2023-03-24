@@ -13,28 +13,27 @@
       <div class="navbar-right">
         <h2 class="hidden">Navigation</h2>
         <a href="index.html" class="nav-logo"
-        ><img src="images/main-logo.svg" alt="" srcset=""
-      /></a>
+        ><img src="images/main-logo.svg" alt="" 
+      ></a>
       <nav>
         <ul class="nav-menu">
-          
+
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Forum</a>
+            <a href="register.html" class="nav-link">Forum</a>
           </li>
         </ul>
-      
-        
+
       </nav>
       </div>
         <div class="nav-button">
         <div class="login">
-          <a href="" class="login-btn" >Login</a>
+          <a href="login.html" class="login-btn" >Login</a>
         </div>
         <div class="register">
-          <a href="">Register To Join Forum</a>
+          <a href="register.html">Register To Join Forum</a>
         </div>
       </div>
       <div class="hamburger">
@@ -42,79 +41,52 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      
+
     </header>
     <main id="app">
        <section class="Signin">
+        <h2 class="hidden">SignIn</h2>
         <div class="signin-content">
             <div class="signin-left">
                 <p class="signin-heading">
                     Sign in
                 </p>
                 <p class="signin-subheading">
-                    Small text description can goes here
+                    Login To Express You Experience
                 </p>
                 <p class="icon">
                     Continue with:
-                        <img src="images/google.png" alt="" srcset="">
-                        <img src="images/apple.png" alt="" srcset="">
-                   
+                      <img src="images/google.png" alt="" >
+                      <img src="images/apple.png" alt="" >
                 </p>
                <span class="divide">OR</span>
-                <form action="" method="" class="signin-form"> 
-                        
-                            <label for="Email">Email</label>
-                            <input type="email" name="" id="" placeholder="example@gmail.com">
-                             <label for="password">Password</label>
-                            <input type="password" name="" id="" placeholder="Password
-                            ">
-                            <p class="singin-btn">
-                                <input type="submit" value="SignIn">
-                            </p>
-            
-                            <p class="signup-btn">
-                                New to forum?<a href="http://">Register</a>
-                             </p>
-                            </div>
-                            <p class="policy">
-                                
-                            </p>
-                </form>
-                <div class="signin-image">
-               
-                </div>
-            </div>
-           
-  
+               <thelogin></thelogin>
 
-
-
+              </div>
+              </div>
        </section>
 
     </main>
     <footer>
-
+      <h2 class="hidden">Footer</h2>
       <div class="footer-logo">
         <img src="images/main-logo-white.png" alt="Footer Logo">
         <nav class="footer-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forum.html">Froum</a></li>
           </ul>
         </nav>
       </div>
-     
       <div class="footer-login">
-        <a href="#">Login</a>
+        <a href="login.html">Login</a>
       </div>
     </footer>
-    
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js" type="module" defer></script>
-    <script src="js/animation.js"></script>
 </body>
 </html>

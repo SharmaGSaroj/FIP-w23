@@ -1,26 +1,43 @@
+
 export default {
-    name:'BlogSection',
+  name: 'BlogSection',
+  props: {
+    hero:Object
+  },
+ 
+ 
+  template: `
+    <div class="blog-subgrid-right">
+      <img :src='"images/" + hero.display_image' alt="image"/>
+      <div class="blog-subgrid-text">
+        <p class="blog-heading-right">
+          {{ hero.title }}
+        </p>
+        <p class="blog-grid-button">
+          <a @click="openBlogPage(hero)" >Read More &#8594</a>
+        </p>
+      </div>
+    </div>
+  `,
+  data() {
+    return {
+      heroData:{},
+   
+     
+    }
+  },
+
+  created() {
     
-    props: {
-        hero: Object
-      },
-      template:`
+  },
+  methods: {
+    openBlogPage(hero) {
+      // generate the link to the blog page
+      const link = `blog.html?id=${hero.id}`;
       
-      <div class="blog-subgrid">
-            <img src="images/blog-image-left.png" alt="" />
-            <p class="blog-grid-heading">
-             {{hero.name}}
-            </p>
-            <p class="blog-grid-subheading">
-              Lorem ipsum dolor sit ametoeneson vestibulum  sit amet fringilla risumn.
-            </p>
-            <p class="blog-grid-button">
-              <a href="" @click="openComponent">Read More</a>
-            </p>
-          </div>
-      
-      
-      `,
-    
-    
+      // open the new page
+      window.location.href = link;
+    }
+  }
+  
 }

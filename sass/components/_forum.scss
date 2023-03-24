@@ -33,14 +33,11 @@ color: #A5A5A5;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    
-    padding: 16px;
     gap: 14px;
     border-radius: 12px;
   }
   
   .post {
-
 border-radius: 12px;
 background: #fff;
 padding: 32px;
@@ -54,9 +51,13 @@ margin-bottom: 16px;
     padding: 0px 0px 22px;
     gap: 12px;
    margin-bottom: 24px;
+   border-bottom: 1px lightgrey solid;
   
   }
-  
+  .newpost-btn{
+    border-top: 1px lightgrey solid;
+    
+  }
   .post-title {
       width: 616px;
       height: 50px;
@@ -68,7 +69,7 @@ margin-bottom: 16px;
       line-height: 140%;
 
       letter-spacing: -0.03em;
-
+      
 
   color: #020202;
   }
@@ -102,7 +103,12 @@ color: #020202;
   }
   .post-date{
    color:  #9c9c9c;
+
   }
+.forum.image img{
+  width: 400px;
+  height: 400px;
+}
   .post-content {
 
       font-family: 'SF Pro Text';
@@ -114,7 +120,84 @@ color: #020202;
       margin-top: 16px;
       text-align: justify;
   }
+  .newpost-content{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 14px;
+margin: 0 auto;
+width: 648px;
+height: 200px;
 
+background: #FFFFFF;
+border-radius: 12px;
+  }
+  .newpost-form{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 0px 22px;
+gap: 24px;
+
+width: 616px;
+height: 200px;
+
+
+  }
+  .textfield{
+      width: 616px;
+      height: 25px;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.03em;
+      box-sizing: none;
+      border: none;
+      outline: none;
+      color: #000000;
+  }
+  .newpost-btn{
+    display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 616px;
+height: 19px;
+
+  }
+  .newpost-btn button{
+    width: 34px;
+height: 19px;
+padding: 0;
+border: none;
+background: none;
+font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #A5A5A5;
+cursor: pointer;
+&:hover{
+  color: #C51111;
+}
+  }
+  .post-image {
+    display: flex;
+    justify-content: center;
+  }
+  .post-image img{
+    max-width: 600px;
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 32px;
+  }
 
   @media only screen and (max-width: 768px){
     .post-meta {
@@ -142,4 +225,42 @@ font-size: 36px;
 .post-meta {
       width: 50%;
       }
+      .post-image {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .post-image img {
+        max-width: 90%;
+        height: auto;
+        margin-right: 64px
+        px;
+      }
+  }
+
+
+  @media only screen and (max-width: 480px){
+    .newpost-content {
+      width: 100%;
+      height: auto;
+      }
+      .newpost-form {
+      width: 100%;
+      height: auto;
+      }
+      .textfield {
+      width: 100%;
+      height: auto;
+      }
+      .newpost-btn {
+      width: 100%;
+      height: auto;
+      justify-content: flex-end;
+      }
+      .newpost-btn button {
+      font-size: 14px;
+      line-height: 16px;
+      }
+      
+   
   }

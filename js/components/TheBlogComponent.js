@@ -1,28 +1,32 @@
-export default{
-    name:'BlogComponent',
-    
-    props: {
-      hero: Object
+export default {
+    name: 'BlogComponent',
+    template: `
+      <div class="blogpage-heading">
+        <p>{{ post.title }}</p>
+      </div>
+      <div class="blog-info-image">
+        <img :src="'images/' + post.display_image" :alt="" />
+      </div>
+      <div class="blog-info-text">
+        <p>{{ post.content }}</p>
+      </div>
+    `,
+    data() {
+      return {
+        post: {}
+      };
     },
-    template:`
-   
-    <div class="blogpage-heading">
-    <p>
-       {{hero.name}} 
-    </p>
-</div>
-<div class="blog-info-image">
-<img :src='"images/" + hero.pic' alt="" />
-</div>
-<div class="blog-info-text">
-   
-    <p>
-    {{hero.story}}
-    </p>
-</div> 
-
-
-    `
-    
-
-}
+    created() {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const id = urlParams.get('id');
+  
+      fetch(`http://localhost:8000/blogs/${id}`)
+        .then(response => response.json())
+        .then(post => {
+          this.post = post;
+        })
+        .catch(error => console.error(error));
+    }
+  };
+  

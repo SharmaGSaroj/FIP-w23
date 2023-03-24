@@ -25,41 +25,40 @@ color: #1D1D1F;
 }
 .blog-info-image img{
    margin-bottom: 32px;
-   margin-top: 120px; 
+   margin-top: 64px; 
 }
 .blog-info-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    
-    width: 620px;
-    .blogtextheading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
         width: 620px;
-height: 56px;
+        .blogtextheading{
+            width: 620px;
+    height: 56px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 56px;
+    /* identical to box height, or 117% */
 
-font-family: 'SF Pro Text';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 56px;
-/* identical to box height, or 117% */
+    letter-spacing: -0.04em;
 
-letter-spacing: -0.04em;
+    /* blacks/ */
 
-/* blacks/ */
-
-color: #ff0000;
+    color: #ff0000;
     }
     p{
         font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 56xpx;
+    line-height: 32px;
     margin-top: 24px;
     letter-spacing: -0.02em;
     color: #3e3d3d;
-    text-align: justify;
+   text-align: justify;
     
     }
 
@@ -86,6 +85,8 @@ color: #ff0000;
     }
     .blog-info-image img {
     margin-top: 80px;
+    align-items: center;
+    margin-left: -28px;
     }
     .blog-info-text {
     width: 90%;
@@ -97,6 +98,7 @@ color: #ff0000;
     p {
     font-size: 16px;
     line-height: 32px;
+    margin-left: -24px;
     }
     }
     .blog-gallary {
@@ -106,7 +108,7 @@ color: #ff0000;
 
     @media screen and (max-width: 460px) {
         .blog-page {
-        margin-top: 80px;
+        margin-top: 90px;
         align-items: center;
         justify-content: center;
         }
@@ -114,13 +116,16 @@ color: #ff0000;
         width: 90%;
         font-size: 20px;
         line-height: 32px;
+
         }
         .blog-info-image img {
         margin-top: 60px;
-        max-width: 90%;
+        max-width: 100%;
         }
         .blog-info-text {
-        width: 90%;
+            margin: 0 auto;
+            text-align: center;
+          }
         .blogtextheading {
         width: 100%;
         font-size: 20px;
@@ -134,4 +139,4 @@ color: #ff0000;
         .blog-gallary {
         flex-direction: column;
         }
-        }
+        

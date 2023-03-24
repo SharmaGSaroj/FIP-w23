@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    
-    <link rel="stylesheet" href="public/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1 class="hidden">Home</h1>
-    <header>
-      <div class="navbar-right">
-        <h2 class="hidden">Navigation</h2>
-        <a href="index.html" class="nav-logo"
-        ><img src="images/main-logo.svg" alt="" srcset=""
-      /></a>
+<html  lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+  <link rel="stylesheet" href="public/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>Home</title>
+</head>
+
+<body>
+  <h1 class="hidden">Home</h1>
+  <header>
+    <div class="navbar-right">
+      <h2 class="hidden">Navigation</h2>
+      <a href="index.html" class="nav-logo"><img src="images/main-logo.svg" alt=""></a>
       <nav>
         <ul class="nav-menu">
-          
+
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Forum</a>
+            <a href="register.html" class="nav-link">Forum</a>
           </li>
         </ul>
-      
-        
+
+
       </nav>
+    </div>
+    <div class="nav-button">
+      <div class="login-btn">
+        <a href="login.html" >Login</a>
       </div>
-        <div class="nav-button">
-        <div class="login">
-          <a href="" class="login-btn" >Login</a>
-        </div>
-        <div class="register">
-          <a href="">Register To Join Forum</a>
-        </div>
+      <div class="register">
+        <a href="register.html">Register To Join Forum</a>
       </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      
-    </header>
+    </div>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+  </header>
+  <main id="app">
     <section class="hero">
+      <h2 class="hidden">Hero</h2>
       <div class="herocontent">
         <div class="herotext">
           <p class="sub-heading">
@@ -56,46 +58,41 @@
           </p>
           <p class="hero-heading">Join the Fight & Unlock a Powerful Music Video</p>
           <p class="herotext-info">
-            Join us to end cyberbullying in Canadian basketball. Pledge to support our music video and create a safe community for young athletes. Let's reach 50k pledges and make a difference on the court.
+            Join us to end cyberbullying in Canadian basketball. Pledge to support our music video and create a safe
+            community for young athletes. Let's reach 50k pledges and make a difference on the court.
           </p>
           <div class="hero-button">
             <p class="primarybtn"><a href="">Take the pledge</a></p>
             <div class="count-details">
               <img src="images/avatars.png" alt="">
-              <p class="count-info-text"> Current Pledges: 1200 / 50,000</p>
+              <p class="count-info-text"> Current Pledges: {{ pledgeCount }} / 50,000</p>
             </div>
-        </div>
+          </div>
         </div>
         <div class="heroimage">
-          <img src="images/hero-image.png" alt="" srcset="" />
+          <img src="images/hero-image.png" alt="" >
         </div>
       </div>
     </section>
- 
+
     <section class="video">
+      <h2 class="hidden">Video</h2>
       <div class="video-title animate-me">
-      <p class="video-heading">Help Us Unleash the <br> Power of Music</p>
-      <p class="video-subheading">
-        Help make Canadian basketball safe. Pledge against cyberbullying and spread the word. Get a music video with Falling In Reverse at 50K pledges.
-      </p>
+        <p class="video-heading">Help Us Unleash the <br> Power of Music</p>
+        <p class="video-subheading">
+          Help make Canadian basketball safe. Pledge against cyberbullying and spread the word. Get a music video with
+          Falling In Reverse at 50K pledges.
+        </p>
       </div>
-    <div class="vidoe-section animate-me">
-      <video  controls loop muted>
-        <source src="" type="video/mp4" />
-        
-    </div>
-    <p class="video-subtitle">
-      Take the Pledge and Watch the Video
-    </p> 
+      <div class="vidoe-section animate-me">
+        <video controls loop muted>
+          <source src="" type="video/mp4" >
+          </video>
+      </div>
+      <p class="video-subtitle">
+        Take the Pledge and Watch the Video
+      </p>
     </section>
-    
-
-
-
-
-    <main id="app">
-      
-    
 
     <section class="ebook">
       <h2 class="hidden
@@ -103,85 +100,93 @@
       <div class="ebook-details">
         <div class="ebook-result">
           <img src="images/ebook-left.png" alt="">
-          
+
           <div class="download-info-left">
             <div class="download-info">
-            <p class="download-info-heading">
-              In last one hour,
-            </p>
-            <p class="download-info-text">
-            <span class="red"> 47 people </span>downloaded our free eBook</p>
-          </div>
+              <p class="download-info-heading">
+                In last one hour,
+              </p>
+              <p class="download-info-text">
+                <span class="red"> {{ pledgeCount }}</span> downloaded our free eBook
+              </p>
+            </div>
           </div>
         </div>
         <div class="download-ebook">
-          <img src="images/ebook-right.png" alt="" />
+          <img src="images/ebook-right.png" alt="" >
           <div class="download-info-right">
             <div class="download-ebook-info">
-            <p class="download-ebook-heading">
-              Free E-book Download
-            </p>
-            <p class="download-ebook-text">
-              Learn more about the issue and how you can make a difference. Download our free e-book now and help us reach our goal of 10,000 clicks on flyers.
-            </p>
-            <p class="ebook-download-button"><a href="">Download Now</a></p>
+              <p class="download-ebook-heading">
+                Free E-book Download
+              </p>
+              <p class="download-ebook-text">
+                Learn more about the issue and how you can make a difference. Download our free e-book now and help us
+                reach our goal of 10,000 clicks on flyers.
+              </p>
+              <p class="ebook-download-button"><a href="">Download Now</a></p>
             </div>
-          </div> 
+          </div>
 
         </div>
       </div>
     </section>
     <section class="pledge">
-     <div class="pledgecontent">
+      <h2 class="hidden">Pledge</h2>
+      <div class="pledgecontent">
         <div class="pledgetext">
           <p class="pledge-subheading">
             Making a Difference Together:
           </p>
           <p class="pledge-heading">See the Impact You're Making</p>
           <p class="pledgetext-info">
-            Join us to end cyberbullying in Canadian basketball. Pledge to support our music video and create a safe community for young athletes. Let's reach 50k pledges and make a difference on the court.
+            Join us to end cyberbullying in Canadian basketball. Pledge to support our music video and create a safe
+            community for young athletes. Let's reach 50k pledges and make a difference on the court.
           </p>
-          <form action="" method="post" class="pledge-form">
-           <span class="top">Name</span>
-            <input type="text" name="" id="" placeholder="Full name" class="input" >
+          <form action="/pledge" @submit.prevent="submitPledge" method="post" class="pledge-form">
+            <span class="top">Name</span>
+            <input v-model="fullname" type="text" name="" placeholder="Full name" class="input">
             <span class="top">Email</span>
-            <input type="email" name="" id="" placeholder="example@gmail.com" class="input">
+            <input v-model="email" type="email" name=""  placeholder="example@gmail.com" class="input">
+            <div class="pledge-button">
+              <button type="submit" class="primarybtn">Take the pledge Now</button>
+              </div>
           </form>
-          <div class="pledge-button">
-            <p class="primarybtn"><a href="">Take the pledge Now</a></p>
-            
+          <div v-if="successMessage" class="success-message">
+            {{ message }}
+          </div>
+
         </div>
-        </div>
-        <div class="pledge-image">
-          <img src="images/unlock-video.png" alt="" srcset="" />
-          <div class="pledge-count">
-            <p>
-              Unlock the music video by taking the pledge
-            </p>
-            <div class="pledge-count-btm">
-             <div class="pledge-count-number">
+    
+      <div class="pledge-image">
+        <img src="images/unlock-video.png" alt="" >
+        <div class="pledge-count">
+          <p>
+            Unlock the music video by taking the pledge
+          </p>
+          <div class="pledge-count-btm">
+            <div class="pledge-count-number">
               <p>
                 Pledge count
               </p>
               <p>
-                25000/50000
+                {{ pledgeCount }}/50000
               </p>
-             </div>
-             <div class="progress-bar">
+            </div>
+            <div class="progress-bar">
               <div class="progress"></div>
-             </div>
-             <div class="pledge-count-image">
+            </div>
+            <div class="pledge-count-image">
               <img src="images/avatars.png" alt="" class="pledge-countbox">
               <p class="pledge-count-btn">
                 <a href="">Take pledge</a>
               </p>
-             </div>
             </div>
           </div>
         </div>
-      </div>
+        </div>
     </section>
     <section class="join">
+      <h2 class="hidden">Join</h2>
       <div class="joincontent">
         <div class="jointext">
           <p class="join-sub-heading">
@@ -189,71 +194,21 @@
           </p>
           <p class="join-heading">Join the Fight and Be Part of a Legacy</p>
           <p class="jointext-info">
-            Track the progress of our campaign and see how close we are to reaching our goal of 50,000 pledges. Every pledge counts and together we can create a bully-free game.
+            Track the progress of our campaign and see how close we are to reaching our goal of 50,000 pledges. Every
+            pledge counts and together we can create a bully-free game.
           </p>
           <div class="join-button">
-            <p class="primarybtn"><a href="">Take the pledge</a></p>
-            </div>
-        </div>
-        
-        <div class="join-image">
-          <img src="images/join-image.png" alt="" srcset="" />
-        </div>
-      </div>
-    </section>
-    <section class="impact">
-      <h2 class="hidden
-      ">Impact</h2>
-      <div class=" impact-info">
-        <div class="impact-text">
-          <p class="impact-heading">Impact of <br> cyber bullying</p>
-          <p class="impact-subheading">
-            Cyberbullying can have serious mental and emotional consequences on young athletes, leading to decreased performance, self-esteem, and even depression. It's time to take a stand and create a safer environment in Canadian basketball.
-          </p>
-          <div class="impact-image">
-            <img src="images/impact-image.png" alt="" srcset="" />
-           </div> 
+            <p class="primarybtn"><a href="">Share with your friends</a></p>
+          </div>
         </div>
 
-        <div class="impact-card">
-          <div class="impact-card-1">
-            <div class="card-image">
-            <img src="images/impact-icon1.png" alt="" /></div>
-            <p class="impact-1-heading">Mental Consequences</p>
-            <p class="impact-1-fact">
-              Cyberbullying can have serious mental and emotional consequences on young athletes, leading to depression, anxiety, and even suicide.
-            </p>
-          </div>
-          <div class="impact-card-2">
-            <div class="card-image">
-            <img src="images/impact-icon2.png" alt="" /></div>
-            <p class="impact-1-heading">Our Goal</p>
-            <p class="impact-1-fact">
-              It's time to take a stand and create a safer environment in Canadian basketball. With your help, we aim to reach 50,000 people on Reddit and other relevant platforms.
-            </p>
-          </div>
-          <div class="impact-card-3">
-            <div class="card-image">
-            <img src="images/impact-icon3.png" alt="" /></div>
-            <p class="impact-1-heading">Decreased Performance</p>
-            <p class="impact-1-fact">
-              Cyberbullying can also lead to decreased performance, self-esteem, and affect overall well-being of young athletes.
-            </p>
-          </div>
-          <div class="impact-card-4">
-            <div class="card-image">
-              <img src="images/impact-icon4.png" alt="" />
-            </div>
-            
-            <p class="impact-1-heading">Be the Change</p>
-            <p class="impact-1-fact">
-              You can make a difference by spreading awareness and promoting kindness and respect online. Join the movement for a bully-free game.
-            </p>
-          </div>
+        <div class="join-image">
+          <img src="images/join-image.png" alt="" >
         </div>
       </div>
     </section>
     <section class="fact">
+      <h2 class="hidden">Fact</h2>
       <div class="fact-info">
         <div class="fact-know">
           <p class="sub-heading">
@@ -264,86 +219,45 @@
           </p>
           <hr>
           <div class="fact-text">
-           
+
             <p class="fact-points">
               <span class="fact-points-heading">70% Targeted Online</span><br>
-              Did you know that 70% of Canadian students in Grades 7-11 have been bullied online? This is a staggering statistic that highlights the severity of the issue.
+              Did you know that 70% of Canadian students in Grades 7-11 have been bullied online? This is a staggering
+              statistic that highlights the severity of the issue.
             </p>
-            
+
             <p class="fact-points">
               <span class="fact-points-heading">34% Experienced Cyberbullying</span><br>
-              34% of Canadian youth have reported cyberbullying, indicating a need for change. Let's create a safer environment for our young athletes.
+              34% of Canadian youth have reported cyberbullying, indicating a need for change. Let's create a safer
+              environment for our young athletes.
             </p>
           </div>
         </div>
         <div class="fact-gif">
           <video width="400" height="460" autoplay loop muted>
-            <source src="images/fact-video.mp4" type="video/mp4" />
+            <source src="images/fact-video.mp4" type="video/mp4" >
           </video>
         </div>
       </div>
     </section>
-    
+
     <section class="blog">
+      <h2 class="hidden
+      ">Blog</h2>
+      <div class="blog-content-heading">
         <p class="blog-subheading">Blog</p>
         <p class="blog-heading">
           Stay informed and educated
         </p>
-        <div class="blog-grid">
-          <blog v-for="hero in heroData"
-          :hero="hero"></blog>
-          <div class="blog-grid-right">  
-            <div class="blog-subgrid-right">
-              <img src="images/blog-image-2.png" alt="" srcset="">
-              <div class="blog-subgrid-text">
-                <p class="blog-grid-date">
-                  02 September 2021
-                </p>
-              <p class="blog-heading-right">
-                Development tips for Webflow
-              </p>
-              <p class="blog-grid-button">
-                <a href="" @click.prevent="openComponent">Read More &#8594</a>
-              </p>
-              </div>
-              </div>
-              <div class="blog-subgrid-right">
-                <img src="images/blog-image-2.png" alt="" srcset="">
-                <div class="blog-subgrid-text">
-                  <p class="blog-grid-date">
-                    02 September 2021
-                  </p>
-                <p class="blog-heading-right">
-                  Development tips for Webflow
-                </p>
-                <p class="blog-grid-button">
-                  <a href="" @click.prevent="openComponent">Read More &#8594</a>
-                </p>
-                </div>
-                </div>
-                <div class="blog-subgrid-right">
-                  <img src="images/blog-image-2.png" alt="" srcset="">
-                  <div class="blog-subgrid-text">
-                    <p class="blog-grid-date">
-                      02 September 2021
-                    </p>
-                  <p class="blog-heading-right">
-                    Development tips for Webflow
-                  </p>
-                  <p class="blog-grid-button">
-                    <a href=""@click.prevent="openComponent">Read More &#8594</a>
-                  </p>
-                  </div>
-                  </div>
-              </div>
-        </div>   
-     
-    </section>
-   
-       
+      </div>
+
+      <div class="blog-grid">
+        <blog v-for="hero in heroData" :hero="hero"></blog>
       </div>
     </section>
+  </main>
     <section class="forum">
+      <h2 class="hidden">Forum</h2>
       <p class="forum-subheading">Speak Up, Inspire Others</p>
       <p class="forum-heading">Join Our Community Against <br>
         Cyberbullying</p>
@@ -353,26 +267,32 @@
         </div>
         <div class="forum-text">
           <p class="forum-info">
-            Hi, I'm Sarah, a former basketball player. I've seen the harm of cyberbullying and it's time to act. This community is for those affected by cyberbullying in Canadian basketball and for those who want to make a difference. Have a story? Share it and let's create a safer environment.
+            Hi, I'm Sarah, a former basketball player. I've seen the harm of cyberbullying and it's time to act. This
+            community is for those affected by cyberbullying in Canadian basketball and for those who want to make a
+            difference. Have a story? Share it and let's create a safer environment.
           </p>
           <div class="person-info">
-          <p class="personName">
-            Sara James
-          </p>
-          <p class="personlocation">
-            Ontario, Canada
-          </p>
+            <p class="personName">
+              Sara James
+            </p>
+            <p class="personlocation">
+              Ontario, Canada
+            </p>
+          </div>
+
         </div>
-        
-        </div>
-        
+
       </div>
       <p class="forum-btn">
-        <a href="">Share Your Story</a>
+        <a href="login.html">Share Your Story</a>
       </p>
     </section>
-  </main>
+ 
+
+
+
   <section class="faq">
+    <h2 class="hidden">FAQ</h2>
     <p class="faq-subheading">
       Slam Cyberbullying, Not Players
     </p>
@@ -383,49 +303,56 @@
         <dt class="question">What is cyberbullying?
           <span class="arrow">&#709;</span>
         </dt>
-        <dd class="answer">Cyberbullying is the use of technology, such as smartphones, computers, or social media to harass, humiliate, or harm someone.</dd>
-      <hr class="faq-line"> 
-        <dt class="question">What is the impact of cyberbullying on Canadian basketball?<span class="arrow">&#709;</span> </dt>
-        <dd class="answer">Cyberbullying is the use of technology, such as smartphones, computers, or social media to harass, humiliate, or harm someone.</dd>
-      <hr class="faq-line">
+        <dd class="answer">Cyberbullying is the use of technology, such as smartphones, computers, or social media to
+          harass, humiliate, or harm someone.</dd>
+        <hr class="faq-line">
+        <dt class="question">What is the impact of cyberbullying on Canadian basketball?<span
+            class="arrow">&#709;</span> </dt>
+        <dd class="answer">Cyberbullying is the use of technology, such as smartphones, computers, or social media to
+          harass, humiliate, or harm someone.</dd>
+        <hr class="faq-line">
         <dt class="question">How can I help prevent cyberbullying in Canadian basketball?
           <span class="arrow">&#709;</span>
         </dt>
-        <dd class="answer">Cyberbullying is the use of technology, such as smartphones, computers, or social media to harass, humiliate, or harm someone.</dd>
-      <hr class="faq-line">
-        <dt class="question">What resources are available to support those affected by cyberbullying in Canadian basketball?
+        <dd class="answer">Cyberbullying is the use of technology, such as smartphones, computers, or social media to
+          harass, humiliate, or harm someone.</dd>
+        <hr class="faq-line">
+        <dt class="question">What resources are available to support those affected by cyberbullying in Canadian
+          basketball?
           <span class="arrow">&#709;</span>
-          <dd class="answer">Cyberbullying is the use of technology, such as smartphones, computers, or social media to harass, humiliate, or harm someone.</dd>
+        <dd class="answer">Cyberbullying is the use of technology, such as smartphones, computers, or social media to
+          harass, humiliate, or harm someone.</dd>
         </dt>
       </dl>
       <hr class="faq-line">
     </div>
-    
   </section>
+  
   <footer>
-
+    <h2 class="hidden">Footer</h2>
     <div class="footer-logo">
       <img src="images/main-logo-white.png" alt="Footer Logo">
       <nav class="footer-nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html">About</a></li>
         </ul>
       </nav>
     </div>
-   
+
     <div class="footer-login">
-      <a href="#">Login</a>
+      <a href="login.html">Login</a>
     </div>
   </footer>
-  
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
 
-    <script src="js/main.js" type="module" defer></script>
-    <script src="js/animation.js"></script>
-  </body>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+  <script src="js/main.js" type="module" defer></script>
+  <script src="js/animation.js"></script>
+</body>
+
 </html>

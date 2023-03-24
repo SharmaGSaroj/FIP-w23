@@ -2,7 +2,7 @@
 
 .registration{
   background-color: #F7F7F7;
-  height: 875px;
+height: auto;
 
 }
 .register-content{
@@ -190,11 +190,28 @@ color: #313131;
 
 width: 730px;
 height: 740px;
-
-
-background-color: #D9D9D9;
 border-radius: 16px;
 }
+.success-message, .error-message {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #c5e1a5;
+  color: #33691e;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+}
+
+
+
 
 
 @media only screen and (max-width: 768px){
@@ -219,18 +236,65 @@ border-radius: 16px;
   }
  
 }
-@media only screen and (max-width: 600px){
-  .register-left{
-    display: flex;
+
+@media only screen and (max-width: 460px) {
+  .register-content {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 48px;
-    gap: 24px;
-    width: 50%;
-    height: 800px;
-    background: #FFFFFF;
-    border-radius: 16px;
+    padding: 2rem 1rem;
   }
 
+  .register-heading, .register-subheading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 
+  .register-left {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .register-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .Name, .icon, .divide {
+    width: 100%;
+    height: auto;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .agreement {
+    flex-direction: row;
+  }
+
+  .signup-btn {
+    margin-top: 1rem;
+  }
+
+  .register-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
 }
+
+

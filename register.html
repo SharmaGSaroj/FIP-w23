@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
@@ -22,7 +22,7 @@
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Forum</a>
+            <a href="login.html" class="nav-link">Forum</a>
           </li>
         </ul>
       
@@ -31,10 +31,10 @@
       </div>
         <div class="nav-button">
         <div class="login">
-          <a href="" class="login-btn" >Login</a>
+          <a href="login.html" class="login-btn" >Login</a>
         </div>
         <div class="register">
-          <a href="">Register To Join Forum</a>
+          <a href="register.html">Register To Join Forum</a>
         </div>
       </div>
       <div class="hamburger">
@@ -61,36 +61,42 @@
                    
                 </p>
                <span class="divide">OR</span>
-                <form action="" method="post" class="register-form"> 
+               <div v-if="successMessage" class="success-message">{{ successMessage }}</div>
+               <div v-if="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+                <form @submit.prevent="register" action="/register" method="POST" class="register-form"> 
                         
-                            <label for="">Frist Name</label>
-                            <input type="text" name="First Name" id="" placeholder="First name" >
+                            <label for="">First Name</label>
+                            <input v-model="first_name"type="text" name="first_name" ref="firstNameError" id="" placeholder="First name" >
                             <label for="Last Name">Last Name</label>
-                            <input type="text" name="Last Name" id="" placeholder="Last Name">
+                            <input v-model="last_name"type="text" name="last_name" ref="LastNameError" id="" placeholder="Last Name">
                         
                             <label for="Email">Email</label>
-                            <input type="email" name="" id="" placeholder="example@gmail.com">
+                            <input v-model="email" type="email" name="email" ref="emailError" id="" placeholder="example@gmail.com">
                              <label for="password">Password</label>
-                            <input type="password" name="" id="" placeholder="Password
+                            <input v-model="password" type="password" ref="passwordError" name="password" id="" placeholder="Password
                             ">
                             
                                 <span class="agreement">
-                                <input type="checkbox" name="" id="">
+                                <input v-model="agreement" type="checkbox" name="" id="">
                                 <p class="agreement-text">
                                     I agree to Terms of Uses and Conditions
                                 </p>
                             </span>
                             <p class="register-btn">
-                                <input type="submit" value="Register">
+                                <input type="submit" value="Register"><a href="login.html"></a>
                             </p>
             
                             <p class="signup-btn">
-                                Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">SignUp</a>
+                                Already have an account? <a href="login.html">SignUp</a>
                              </p>
+                             
                             </div>
+                            
+
                 </form>
                 <div class="register-image">
-               
+                  <img src="images/register.png" alt="" srcset="">
                 </div>
             </div>
            
@@ -107,16 +113,24 @@
         <img src="images/main-logo-white.png" alt="Footer Logo">
         <nav class="footer-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Forum</a></li>
           </ul>
         </nav>
       </div>
      
       <div class="footer-login">
-        <a href="#">Login</a>
+        <a href="login.html">Login</a>
       </div>
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-toasted"></script>
+
+    <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+    <script src="js/main.js" type="module" defer></script>
 
 </body>
 </html>
