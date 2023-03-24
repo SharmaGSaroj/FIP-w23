@@ -220,10 +220,8 @@ import BlogSection from "./components/BlogSection.js";
               window.addEventListener("load", function() {
                tl.play();
                 });
-
-
-
-        
+                
+               
         }
     }).mount('#app')
 })();
